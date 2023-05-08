@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>블록 레벨 요소와 인라인 레일 요소</title>
+        <style>
+            .content {
+                width: 100px;
+                height: 100px;
+                padding: 10px;
+                margin: 30px;
+                border: 5px solid black;
+            }
+
+            #block img {
+                display: block;
+                margin: 10px;
+            }
+
+            #list li {
+                background-color: aquamarine;
+                margin: 10px;
+                width: 150px;
+                height: 50px;
+                /* 블록 요소는 가로 세로 길이 지정 가능 */
+            }
+
+            #inline li {
+                background-color: antiquewhite;
+                margin: 10px;
+                display: inline;
+                width: 150px;
+                height: 50px;
+                /* 인라인 요소는 가로 세로 길이 지정 불가 */
+            }
+
+            #inlineblock li {
+                background-color: orange;
+                margin: 10px;
+                display: inline-block;
+                width: 150px;
+                height: 50px;
+                /* 인라인 블록 요소는 가로 정렬 , 가로 세로 길이 지정 가능 */
+            }
+
+            .overlap {
+                width: 100px;
+                height: 100px;
+                padding: 10px;
+                margin: 30px;
+                border: 5px solid black;
+                display: inline-block;
+            }
+
+            /* 박스 사이즈 정하기 */
+            .box1 , .box2 {
+                width: 300px;
+                height: 150px;
+                margin: 30px;
+                padding: 10px;
+                border: 5px solid black;
+            }
+
+            .box1 {
+                box-sizing: content-box;
+            }
+
+            .box2 {
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <!--컨텐츠 크기 확인-->
+        <h1>컨텐츠 크기</h1>
+        <div style="background-color: aquamarine;" class="content"></div>
+        <div style="background-color: antiquewhite;" class="content"></div>
+        <div style="background-color: orange;" class="content"></div>
+
+        <hr>
+
+        <h1>이미지 인라인 배치</h1>
+
+        <div>
+            <img src="images/pic1.jpg">
+            <img src="images/pic2.jpg">
+            <img src="images/pic3.jpg">
+        </div>
+
+        <hr>
+
+        <!--이미지 블록으로 정렬-->
+        <h1>이미지 블록 배치</h1>
+
+        <div id="block">
+            <img src="images/pic1.jpg">
+            <img src="images/pic2.jpg">
+            <img src="images/pic3.jpg">      
+        </div>
+
+        <hr>
+
+        <h1>메뉴(리스트) 배치(블록)</h1>
+
+        <ul id="list">
+            <li>학과 소개</li>
+            <li>컴퓨터공학전공</li>
+            <li>메타버스전공</li>
+            <li>교육 목표</li>
+            <li>주요 교과목</li>
+        </ul>
+
+        <h1>메뉴(리스트) 인라인 배치</h1>
+
+        <ul id="inline">
+            <li>학과 소개</li>
+            <li>컴퓨터공학전공</li>
+            <li>메타버스전공</li>
+            <li>교육 목표</li>
+            <li>주요 교과목</li>
+        </ul>
+
+        <h1>메뉴(리스트) 인라인 블록 배치</h1>
+
+        <ul id="inlineblock">
+            <li>학과 소개</li>
+            <li>컴퓨터공학전공</li>
+            <li>메타버스전공</li>
+            <li>교육 목표</li>
+            <li>주요 교과목</li>
+        </ul>
+
+        <hr>
+
+        <h1>컨텐츠 마진 중첩</h1>
+        
+        <div style="background-color: aquamarine;" class="content"></div>
+        <div style="background-color: antiquewhite;" class="content"></div>
+        <div style="background-color: orange;" class="overlap"></div>
+        <div style="background-color: greenyellow;" class="overlap"></div>
+
+        <hr>
+
+        <h1>박스 사이즈 정하기</h1>
+
+        <div style="background-color: hotpink;" class="box1">content box</div>
+        <div style="background-color: darkviolet;" class="box2">border box</div>
+    </body>
+</html>
