@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>transform - 김대영</title>
+        <style>
+            .origin {
+                width: 200px;
+                height: 100px;
+                margin: 40px;
+                float: left;
+            }
+
+            .rotateX {
+                -webkit-transform: rotateX(20deg);
+                -ms-transform: rotateX(20deg);
+                -moz-transform: rotateX(20deg);
+                -o-transform: rotateX(20deg);
+                transform: rotateX(20deg);
+            }
+
+            .rotateY :hover {
+                -webkit-transform: rotateY(-45deg);
+                -ms-transform: rotateY(-45deg);
+                -moz-transform: rotateY(-45deg);
+                -o-transform: rotateY(20deg);
+                transform: rotateY(-45deg);
+            }
+
+            .rotateZ :hover {
+                -webkit-transform: rotateZ(-45deg);
+                -ms-transform: rotateZ(-45deg);
+                -moz-transform: rotateZ(-45deg);
+                -o-transform: rotateZ(20deg);
+                transform: rotateZ(-45deg);
+            }
+
+            .rotateXYZ :hover {
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -o-transform: rotate(20deg);
+                transform: rotate3d(2.5,1.1,-1.2);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="origin">
+            <div class="rotateX">
+                <img src="images/fruit.jpg">
+            </div>
+        </div>
+
+        <div class="origin">
+            <div class="rotateY">
+                <img src="images/fruit.jpg">
+            </div>
+        </div>
+
+        <div class="origin">
+            <div class="rotateZ">
+                <img src="images/fruit.jpg">
+            </div>
+        </div>
+
+        <div class="origin">
+            <div class="rotateXYZ">
+                <img src="images/fruit.jpg">
+            </div>
+        </div>
+    </body>
+</html>

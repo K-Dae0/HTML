@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>속성선택자2 - 김대영</title>
+        <style>
+            ul {
+                list-style: none;
+            }
+
+            li {
+                margin: 10px;
+            }
+
+            li a {
+                text-decoration: none;
+                color: black;
+                font-size: 14px;
+                padding: 5px 20px;
+            }
+
+            /* w3가 포함된 모든 속성에 적용 */
+            a[href *= "w3"] {
+                background-color: yellow; /*속성에다 주는 방법*/
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>HTML5 표준안 사이트</h1>
+        <ul>
+            <li><a href="https://www.w3c.org/TR/html" target="_blank">HTML</a></li>
+            <li><a href="https://www.w3c.org/TR/html">CSS </a></li>
+            <li><a href="https://www.w3c.org/TR/html">미디어쿼리</a></li>
+            <li><a href="https://computer.silla.ac.kr">컴퓨터 공학부</a></li>    
+        </ul>
+    </body>
+</html>

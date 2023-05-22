@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>transform - 김대영</title>
+        <style>
+            .scaleX :hover {
+                -webkit-transform: scaleX(1.2);
+                -moz-transform: scaleX(1.2);
+                -moz-transform: scaleY(1.2);
+                -moz-transform: scaleZ(1.2);
+                transform: scaleX(50px);
+            }
+
+            .scaleY :hover {
+                -webkit-transform: scaleY(1.5);
+                -moz-transform: scaleX(1.2);
+                -moz-transform: scaleY(1.2);
+                -moz-transform: scaleZ(1.2);
+                transform: scaleX(50px);
+            }
+
+            .scaleXY :hover {
+                -webkit-transform: scaleX(0.7);
+                -moz-transform: scaleX(0.7);
+                -moz-transform: scaleY(0.7);
+                -moz-transform: scaleZ(0.7);
+                transform: scaleX(0.7);
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="origin">
+            <div class="scaleX">
+                <img src="images/fruit.jpg">
+            </div>
+        </div>
+
+        <div class="origin">
+            <div class="scaleY">
+                <img src="images/fruit.jpg">
+            </div>
+        </div>
+
+        <div class="origin">
+            <div class="scaleXY">
+                <img src="images/fruit.jpg">
+            </div>
+        </div>
+    </body>
+</html>

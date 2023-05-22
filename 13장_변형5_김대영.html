@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>transform - 김대영</title>
+        <style>
+            .origin {
+                width: 200px;
+                height: 100px;
+                margin: 40px;
+                float: left;
+            }
+
+            .skewX {
+                -webkit-transform: skewX(40deg);
+                -ms-transform: skewX(40deg);
+                -moz-transform: skewX(40deg);
+                -o-transform: skew(40deg);
+                transform: skewX(40deg);
+            }
+
+            .skewY {
+                -webkit-transform: skewY(15deg);
+                -ms-transform: skewY(15deg);
+                -moz-transform: skewY(15deg);
+                -o-transform: skew(15deg);
+                transform: skewY(15deg);
+            }
+
+            .skewXY {
+                -webkit-transform: skew(25deg,-15deg);
+                -ms-transform: skew(25deg,-15deg);
+                -moz-transform: skew(25deg,-15deg);
+                -o-transform: skew(25deg,-15deg);
+                transform: skew(25deg,-15deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="origin">
+            <div class="skewX">
+                <img src="images/rose.jpg">
+            </div>
+        </div>
+
+        <div class="origin">
+            <div class="skewY">
+                <img src="images/rose.jpg">
+            </div>
+        </div>
+
+        <div class="origin">
+            <div class="skewXY">
+                <img src="images/rose.jpg">
+            </div>
+        </div>
+    </body>
+</html>

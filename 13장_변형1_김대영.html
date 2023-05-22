@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>transform - 김대영</title>
+        <style>
+            .origin {
+                width: 200px;
+                height: 100px;
+                border: 1px solid black;
+                margin: 40px;
+                float: left;
+            }
+
+            .moveX :hover {
+                -webkit-transform: translate(50px);
+                -moz-transform: translateX(50px);
+                -moz-transform: translateY(50px);
+                -moz-transform: translateZ(50px);
+                transform: translateX(50px);
+            }
+
+            
+
+            .moveY :hover {
+                -webkit-transform: translate(20px);
+                -moz-transform: translateX(20px);
+                -moz-transform: translateY(20px);
+                -moz-transform: translate(20px);
+                transform: translateY(20px);
+            }
+
+            .moveXY :hover {
+                -webkit-transform: translate(10px);
+                -moz-transform: translateX(10px);
+                -moz-transform: translateY(50px);
+                -moz-transform: translate(50px);
+                transform: translateX(20px);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="origin">
+            <div class="moveX">
+                <img src="images/bus.jpg">
+            </div>
+        </div>
+
+        <div class="origin">
+            <div class="moveY">
+                <img src="images/bus.jpg">
+            </div>
+        </div>
+
+        <div class="origin">
+            <div class="moveXY">
+                <img src="images/bus.jpg">
+            </div>
+        </div>
+    </body>
+</html>

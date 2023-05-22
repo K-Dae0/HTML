@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>transform - 김대영</title>
+        <style>
+            .rotate1 :hover {
+                -webkit-transform: rotate(20);
+                -moz-transform: rotate(20);
+                -moz-transform: rotate(20);
+                -moz-transform: rotate(20);
+                transform: rotate(20);
+            }
+
+            .rotate2 :hover {
+                -webkit-transform: rotateY(-40);
+                -moz-transform: rotateX(-40);
+                -moz-transform: scaleY(-40);
+                -moz-transform: scaleZ(-40);
+                transform: scaleX(-40);
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="rotate1">
+            <div class="scaleX">
+                <img src="images/fruit.jpg">
+            </div>
+        </div>
+
+        <div class="rotate">
+            <div class="scaleY">
+                <img src="images/fruit.jpg">
+            </div>
+        </div>
+    </body>
+</html>
